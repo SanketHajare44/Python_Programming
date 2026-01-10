@@ -1,3 +1,4 @@
+# procedural
 
 def CheckEven(no):
     if(no % 2 == 0):
