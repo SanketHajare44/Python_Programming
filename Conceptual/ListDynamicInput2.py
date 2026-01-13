@@ -1,0 +1,23 @@
+def main():
+    Size = 0
+    Value = 0
+    Data = list()
+    Sum = 0
+
+    print("Enter the number of elements : ")
+    Size = int(input())
+
+    print("Enter the elements : ")
+
+    for i in range(Size):
+        Value = int(input())
+        Data.append(Value)
+
+    for i in range(Size):
+        Sum = Sum + Data[i]
+
+
+    print("Summation is : ",Sum)
+
+if __name__ == "__main__":
+    main()
