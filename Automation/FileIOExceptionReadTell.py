@@ -14,6 +14,7 @@ def main():
 
         fobj.close()                # file is closed using 'close()' method
 
+
     except FileNotFoundError:           # 'specific'  exception handled
         print("Unable to open file as there is no such file")
     finally:       
