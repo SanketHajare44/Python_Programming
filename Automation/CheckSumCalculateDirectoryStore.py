@@ -49,7 +49,7 @@ def FindDuplicate(DirectoryName = "Marvellous"):
     
     return Duplicate
 
-def DisplayResult(MyDict):                  # not called becz to check
+def DisplayResult(MyDict):                  # not called becz to used to check
     Result = list(filter(lambda x : len(x) > 1, MyDict.values()))
 
     count = 0
