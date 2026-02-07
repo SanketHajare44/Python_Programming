@@ -1,0 +1,52 @@
+# Command line input
+
+import psutil
+import sys
+
+def main():
+    Border = "-"*48
+    print(Border)
+    print("----Marvellous Platform Surveillance System-----")
+    print(Border)
+
+    if(len(sys.argv) == 2):
+        if(sys.argv[1] == "--h" or sys.argv[1] == "--H"):
+            print("This script is used to to : ")
+            print("1 : Create automatic logs")
+            print("2 : Executed perodically")
+            print("3 : Sends mail with the log")
+            print("4 : Store information about processes")
+            print("5 : Store information about CPU")
+            print("6 : Store information about RAM usage")
+            print("7 : Store information about secondary storage")
+
+        elif(sys.argv[1] == "--u" or sys.argv[1] == "--U"):
+            print("Use the automationc script as")
+            print("ScriptName.py TimeInterval DirectoryName")
+            print("TimeInterval : The time in minutes for perodic scheduling")
+            print("DirectoryName : Name of directory to create auto log")
+
+        else:
+            print("Unable to proceed as there is no such option")
+            print("Please use --u or --h to get more details")
+    
+    # python Demo.py 5 Marvellous
+    elif(len(sys.argv) == 3):
+        print("Inside project logic")
+        print("Time Interval : ",sys.argv[1])
+        print("Directory name : ",sys.argv[2])
+    
+    else:
+        print("Invalid number of command line argument")
+        print("Unable to proceed as there is no such option")
+        print("Please use --u or --h to get more details")
+
+
+
+    
+    print(Border)
+    print("-----------Thank you for using script-----------")
+    print(Border)
+
+if __name__ == "__main__":
+    main()
