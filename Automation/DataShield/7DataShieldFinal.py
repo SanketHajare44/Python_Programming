@@ -27,6 +27,7 @@ def make_Zip(folder):
     return zip_name
 
 def calculate_hash(path):
+    
     hobj = hashlib.md5()
 
     fobj = open(path, "rb")
