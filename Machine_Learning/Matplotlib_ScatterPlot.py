@@ -1,0 +1,14 @@
+# used matplotlib and seaborn for visulization
+
+import matplotlib.pyplot as plt 
+import seaborn as sns
+
+def main():
+    # Linear relationship (Fetures)
+    sns.scatterplot(x=[1,2,3], y= [3,1,4])      # relation between x and y axis
+
+    plt.show()
+
+if __name__ == "__main__":
+    main()
+
